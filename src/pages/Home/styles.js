@@ -7,6 +7,7 @@ export const Container = styled.div`
 `;
 
 export const Content = styled.div`
+  position: relative;
   height: 800px;
   margin-top: 5%;
   width: 100%;
@@ -97,17 +98,11 @@ export const Content = styled.div`
     align-items: center;
     justify-content: center;
     max-width: 200px;
-    margin-top: 10%;
+    margin-top: 20%;
 
     img {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 0px auto;
-      margin: 0px auto;
-      margin-left: 50px;
-      max-width: 50%;
-      border-radius: 10%;
+      transition: 0.6s;
+      display: none;
     }
 
     section {
@@ -151,12 +146,7 @@ export const Content = styled.div`
         margin-top: 0;
       }
 
-      ul {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        width: 50px;
-        height: 30px;
+      ul li {
         cursor: pointer;
         margin-left: 50px;
 

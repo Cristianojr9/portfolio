@@ -1,12 +1,24 @@
 import styled from 'styled-components';
 
 export const Navbar = styled.nav`
+  @media screen and (max-width: 1200px) {
+    transition: 0.7s;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
+    span {
+      display: none;
+    }
+  }
+
   display: flex;
   align-items: center;
   position: fixed;
   z-index: 999;
   top: 0px;
   width: 100%;
+  background: #1D2028;
 
   max-width: 1400px;
 

@@ -70,7 +70,7 @@ export const CardBody = styled.div`
   > p {
     margin-bottom: 10px;
     font-size: 1.0rem;
-    line-height: 2.6rem;
+    line-height: 1.6rem;
     font-weight: 400;
     color: #fafafa;
   }
@@ -83,6 +83,17 @@ export const CardBody = styled.div`
       text-decoration: none;
       color: #D40000;
     }
+  }
+
+  span {
+    margin-top: 2px;
+    &:hover {
+      color: #D40000;
+    }
+  }
+
+  span + span {
+    margin-left: 90px;
   }
 `;
 
